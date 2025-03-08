@@ -1,0 +1,106 @@
+html,body{
+    height:100%;
+}
+
+body{
+    /* background:linear-gradient(lightblue, silver,white) no-repeat; */
+    background:url("../image/paisajes-naturales.jpg");
+    background-size:cover;
+    background-attachment: fixed;
+    padding:0;
+    margin:0;
+}
+h1{
+    /* animation:animartexto 1s 1  forwards; */
+    color:darkblue;
+    /* font-family:"helvetica"; */
+    font-family:"Pacifico";
+    font-size:40px;
+    /* left:-860px; */
+    letter-spacing:3px;
+    /* position:relative; */
+    text-shadow:2px 2px 5px rgba(255,255,255,0.8);
+    text-align:center;
+    transform:rotate(-1deg);
+    transition:all linear 0.5s;
+}
+/* h1:first-letter{
+    color:green;
+} */
+
+h1:hover{
+    color:#000;
+    transform:rotate(1deg);
+}
+
+.cabeza{
+    background:url("../image/fondo2.png");
+    background-size:cover;
+    background-attachment:fixed;
+    height:300px;
+    margin-top:-60px;
+}
+.capa{
+    /* animation:barco 1s 5s forwards linear ; */
+    position:fixed;
+    top:0;
+    right:-400px;
+    width:30%;
+}
+.capa img{
+    max-width:100%;
+}
+.contenido{
+    background:rgba(255,255,255,0.7);
+}
+.contacto{
+    background:linear-gradient(silver, white, transparent);
+    box-shadow:5px 5px 5px #000;
+    border-radius:10px;
+    font-size:20px;
+    margin:0 auto;
+    padding:2em;
+    width:60%;
+}
+.contacto button{
+    display:block;
+    /* margin:0 auto; */
+    padding:5px;
+    /* width:80%; */
+}
+.contacto input{
+    color:blue;
+    font-size:18px;
+    padding:2px;
+}
+
+
+.contenidovideo iframe{
+    display:block;
+    height:400px;
+    margin: 0 auto;
+    width:60%;
+}
+.parrafo{
+    column-count:3;
+    column-rule: #000 dashed 2px;
+    font-family:arial;
+    font-size:20px;
+    margin:0 auto;
+    text-align:justify;
+    width:70%;
+}
+@keyframes animartexto{
+    to{
+        left:0;
+    }
+}
+@keyframes barco{
+    from{ 
+        right:-400px;
+    }
+
+    to{ 
+        right:0px;
+    }
+}
